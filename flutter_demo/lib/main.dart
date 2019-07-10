@@ -1,23 +1,23 @@
-
 import 'package:flutter/material.dart';
+import './widgets/MyAppBar.dart';
+import './widgets/LayoutTutorial.dart';
+import './widgets/Counter.dart';
+import './widgets/RowDemo.dart';
 
 main(List<String> args) {
-  runApp(App());
+  // runApp(App());
+  // runApp(LayoutTutorial());
 }
 
 class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
       home: Scaffold(
-        appBar: AppBar(
-          title: Text('Flutter'),
-        ),
-        body: Center(
-          child: Text('Hello World!'),
-        ),
-      ),
+          appBar: AppBar(
+            title: Text('Flutter'),
+          ),
+          body: Counter()),
     );
   }
 }
