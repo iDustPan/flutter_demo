@@ -34,7 +34,8 @@ Article _$ArticleFromJson(Map<String, dynamic> json) {
     ..badge = json['badge'] as String
     ..expiresAt = (json['expiresAt'] as num)?.toDouble()
     ..viewsN = json['viewsN'] as int
-    ..commentsN = json['commentsN'] as int;
+    ..commentsN = json['commentsN'] as int
+    ..image = json['image'] as String;
 }
 
 Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
@@ -54,5 +55,6 @@ Map<String, dynamic> _$ArticleToJson(Article instance) => <String, dynamic>{
       'badge': instance.badge,
       'expiresAt': instance.expiresAt,
       'viewsN': instance.viewsN,
-      'commentsN': instance.commentsN
+      'commentsN': instance.commentsN,
+      'image': instance.image
     };

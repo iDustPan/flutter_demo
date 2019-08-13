@@ -31,6 +31,7 @@ class Article {
   double expiresAt;
   int viewsN;
   int commentsN;
+  String image;
 
   Article();
 
